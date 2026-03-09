@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images of Christ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #514F59;
+            text-decoration-color: white;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+        }
+        header.title{
+            border: 2px solid black;
+            background-image: url(/images/filler-titlebg.png);
+            background-size: cover;
+            background-position: 0px 570px;
+            height:auto;
+            margin: 0;
+        }
+        #logo{
+            border: 2px solid black;
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            background-color: white;
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color: white;
+            -webkit-text-stroke-width: 2px;
+            -webkit-text-stroke-color: black;
+        }
+        #top{
+            background-color: #759AAB;
+            width: 30px;
+            margin: auto;
+            position: sticky;
+            top: 0;
+            text-align:center;
+            font-size: 30px;
+            border:2px solid black;
+            width: 300px;
+            z-index: 9999;
+        }
+        nav a{
+            margin-right: 20px;
+            color: #401F3E;
+        }
+        #wrapper{
+            width: 600px;
+            margin: 0 auto;
+        }
+        nav {
+            color: white;
+            text-align: center;
+            font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #gallery{
+            display: grid;
+            grid-template-columns: 200px 200px 200px;
+            border: 15px solid rgb(255, 255, 255);
+            width: 100%;
+            background-color: #ddd;
+            background-image:
+                linear-gradient(45deg, #ccc 26%, transparent 26%), 
+                linear-gradient(135deg, #ccc 26%, transparent 26%),
+                linear-gradient(45deg, transparent 75%, #ccc 75%),
+                linear-gradient(135deg, transparent 75%, #ccc 75%);
+            background-size: 20px 20px; /* Must be a square */
+            background-position: 0 0, 10px 0, 10px -10px, 0px 10px; 
+            
+        }
+        #gallery a {
+            cursor: url('images/christus.png'), pointer;
+        }
+        #gallery img {
+            /* make a thumbnail of the image that is 200x300 
+               instead of using width and height here to help the page load faster */
+            width: 200px; 
+            height: 300px;
+
+            opacity:50%;
+            display:block;
+        }
+        #gallery img:hover{
+            opacity: 100%;
+        }
+    </style>
+</head>
+<body>
+        <header class="title">     
+            <img id="logo" src="/images/chrislogo.png" alt="chris logo">
+            <h1>Christopher Ellis</h1>
+        </header>
+        <nav id="top">
+            <a href="index.html">Home</a>
+            <a href="wwr/index.html">wwr</a>
+            <a href="ice/index.html">ICE</a>
+        </nav>
+    <div id="wrapper">
+        <nav>
+            <h1>Christ Art Gallery</h1>
+        </nav>
+        <main>
+            <div id="gallery">
+                <a href="images/big/img1.jpg"><img src="images/small/img1 (1).jpg" alt="huge file size" ></a>
+                <a href="images/big/img2.jpg"><img src="images/small/img2 (1).jpg" alt="huge file size" ></a>
+                <a href="images/big/img3.jpg"><img src="images/small/img3 (1).jpg" alt="huge file size" ></a>
+                <a href="images/big/img4.jpg"><img src="images/small/img4 (1).jpg" alt="huge file size" ></a>
+                <a href="images/big/img5.jpg"><img src="images/small/img5 (1).jpg" alt="huge file size" ></a>
+                <a href="images/big/img6.jpg"><img src="images/small/img6 (1).jpg" alt="huge file size" ></a>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
